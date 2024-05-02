@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom HTML Tags</title>
+    <style>
+        /* Example CSS styling for custom tags */
+        my-custom-tag {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Example of using a custom tag -->
+<my-custom-tag>This is a custom tag.</my-custom-tag>
+
+<script>
+    // Example JavaScript usage with custom tags
+    window.onload = function() {
+        var customTags = document.getElementsByTagName('my-custom-tag');
+        for (var i = 0; i < customTags.length; i++) {
+            customTags[i].innerHTML += " (Custom tag modified by JavaScript)";
+        }
+    }
+</script>
+
+</body>
+</html>
